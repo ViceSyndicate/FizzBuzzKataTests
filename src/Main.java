@@ -19,6 +19,9 @@ public class Main {
     }
 
     public static int[] returnNumberAsIntArray(int number) {
+        if (number < 0){
+            return new int[0];
+        }
         String numberAsString = String.valueOf(number); // Turn number in to a string
         int[] numbersToReturn = new int[numberAsString.length()]; // set numbersToReturn to length of string.
         for (int i = 0; i < numbersToReturn.length; i++){

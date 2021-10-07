@@ -62,13 +62,9 @@ public class FizzBuzzTests {
     }
 
     @Test
-    void testGetArrayOfNumbers(){
-        // check if we get an array of numbers
-
+    void testArrayWasMadeWithPositiveNumbers(){
+        var result = Main.returnNumberAsIntArray(-3);
+        assertEquals(0, result.length);
     }
 
-    @Test
-    void testArrayContainsNumbers(){
-        // check if there are numbers in the array
-    }
 }
