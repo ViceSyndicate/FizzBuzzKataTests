@@ -4,11 +4,6 @@ import static org.junit.jupiter.api.Assertions.*;
 public class FizzBuzzTests {
 
     @Test
-    public void writeOneHundredLines(){
-        assertTrue(Main.numberCounter());
-    }
-
-    @Test
     public void testIsDevisibleByThree(){
         assertTrue(Main.isDevisibleByThree(9));
         assertTrue(Main.isDevisibleByThree(99));
@@ -64,5 +59,16 @@ public class FizzBuzzTests {
         assertFalse(Main.containsFive(6));
         assertFalse(Main.containsFive(98));
         assertFalse(Main.containsFive(64));
+    }
+
+    @Test
+    void testGetArrayOfNumbers(){
+        // check if we get an array of numbers
+
+    }
+
+    @Test
+    void testArrayContainsNumbers(){
+        // check if there are numbers in the array
     }
 }
